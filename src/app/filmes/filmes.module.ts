@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatTableModule} from '@angular/material/table';
 
 import { FilmesRoutingModule } from './filmes-routing.module';
 import { FilmesComponent } from './filmes/filmes.component';
@@ -11,7 +12,8 @@ import { FilmesComponent } from './filmes/filmes.component';
   ],
   imports: [
     CommonModule,
-    FilmesRoutingModule
+    FilmesRoutingModule,
+    MatTableModule
   ]
 })
 export class FilmesModule { }
