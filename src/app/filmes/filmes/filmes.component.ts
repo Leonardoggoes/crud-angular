@@ -7,7 +7,9 @@ import { Filmes } from '../model/filmes';
   styleUrls: ['./filmes.component.scss']
 })
 export class FilmesComponent implements OnInit {
-  filmes: Filmes[]  = [];
+  filmes: Filmes[]  = [
+    {_id: '1', nome: 'teste', categoria: 'comédia'}
+  ];
   displayedColumns = ['nome', 'categoria'];
 
   constructor(){
