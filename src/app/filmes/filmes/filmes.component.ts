@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Filmes } from '../model/filmes';
 
 @Component({
   selector: 'app-filmes',
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filmes.component.scss']
 })
 export class FilmesComponent implements OnInit {
-  filmes: string[]  = [];
+  filmes: Filmes[]  = [];
+  displayedColumns = ['nome', 'categoria'];
 
-  constructor(){}
+  constructor(){
+
+     
+  }
 
   ngOnInit(): void {}
 }
